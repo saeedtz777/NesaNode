@@ -2,6 +2,7 @@
 Start mining $nesa
 
 items needed:
+
 vps (linux,ubuntu).
 
 https://huggingface.co account.
@@ -12,12 +13,16 @@ leap/keplr wallet.
 prepare your vps and connect to it via ssh (putty app)
 in putty run belowe code step by step :
 
-
+----------------------
+----------------------
 
 ----------------------1------------------------
+
 sudo apt update && sudo apt upgrade -y
  
 ----------------------2------------------------
+
+
 sudo apt-get update
 sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
@@ -31,19 +36,28 @@ echo \
 sudo apt-get update
  
 ----------------------3------------------------
+
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
  
 ----------------------4------------------------
+
 sudo groupadd docker
 sudo usermod -aG docker $USER
  
 ----------------------5------------------------
+
 sudo apt install jq -y 
+
  
 ----------------------6------------------------
+
 bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootstrap.sh)
 
 
+ 
+----------------------
+----------------------
 
 
 
