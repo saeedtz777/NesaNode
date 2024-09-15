@@ -1,0 +1,2 @@
+# NesaNode
+Start mining $nesa
